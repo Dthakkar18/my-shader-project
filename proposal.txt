@@ -1,0 +1,26 @@
+Paragraph:
+I have a sphere that has an initail animated wave pattern depicted over it in the vertex shader.
+Then I pulled a noise function to give the wave pattern more flare and not as symetric, which was also added in the vertex shader.
+After that I altered the ditances of the vertices of the object based on the pattern created after the noise was applied.
+Then I passed the pattern from the vertex shader to the fragment shader to have approiate colors for the object.
+Then I created uniforms for "object color", "glow", "distortion" and "noise" which helped enable the user to edit the object in real time.
+
+
+[X] create an initial basic wave pattern
+[X] incorperate different noise functions to the wave pattern 
+[X] have vertex distances follow with pattern
+[X] add glow effect to the object
+[X] add distortion effect
+[X] user can manipulate x, y and z of camera
+[X] user can manipulate the color (rgb) of the object
+[X] user can manipulate the glow effect  
+[X] user can manipulate the amount of wave effect
+[X] user can toggle the presence of the noises
+[X] user can toggle the presence of vertex distance manipulation
+
+References:
+- https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83
+- https://math.stackexchange.com/questions/2491494/does-there-exist-a-smooth-approximation-of-x-bmod-y
+- https://www.youtube.com/watch?v=oKbCaj1J6EI
+- https://www.youtube.com/@3dvisionary
+- https://github.com/visionary-3d/shaders-crash-course/tree/shapes
